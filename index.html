@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece - Mi San Valentín</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .ocean {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, #0077BE, #00BFFF);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 20px;
+        }
+
+        .ship {
+            width: 150px;
+        }
+
+        .luffy {
+            width: 180px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .yes {
+            background-color: #FFD700;
+        }
+
+        .no {
+            background-color: #FF4500;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        "¿Quieres ser mi nakama y conquistar nuevos horizontes conmigo?"
+    </div>
+    
+    <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Going_Merry.svg/1200px-Going_Merry.svg.png" class="ship">
+        <img src="https://static.wikia.nocookie.net/onepiece/images/0/05/Luffy_Anime_Infobox.png" class="luffy">
+    </div>
+
+    <div class="buttons">
+        <button class="yes" onclick="alert('¡Yuhuuu! ¡Vamos por nuevas aventuras! ☠️❤️')">Sí, Capitán!</button>
+        <button class="no" onclick="alert('No puedes decir que no 😆')">No :c</button>
+    </div>
+
+    <div class="ocean"></div>
+
+</body>
+</html>
